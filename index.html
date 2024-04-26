@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+href="calculator-white.svg"
+      />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-Calculator | HTML-CSS-JavaScript</title>
+    <link rel="stylesheet" href="style.css" />  
+  </head>
+  <body class="body">
+    <div class="main-div">
+      <div class="input-div">
+        <input type="tel" id="inputFeild" disabled/>
+      </div>
+
+      <div class="row">
+        <button style="font-size: 27px" onclick="del()">⌫</button>
+        <button onclick="clearResult()">AC</button>
+        <button onclick="numberFunction('%')">%</button>
+        <button
+          onclick="numberFunction('/')"
+          style="background-color: #ff9f0a; font-size: 35px"
+          class="button-4"
+        >
+          ÷
+        </button>
+      </div>
+      <div class="row">
+        <button onclick="numberFunction('7')">7</button>
+        <button onclick="numberFunction('8')">8</button>
+        <button onclick="numberFunction('9')">9</button>
+        <button
+          style="background-color: #ff9f0a"
+          class="button-4"
+          onclick="numberFunction('*')"
+        >
+          x
+        </button>
+      </div>
+      <div class="row">
+        <button onclick="numberFunction('4')">4</button>
+        <button onclick="numberFunction('5')">5</button>
+        <button onclick="numberFunction('6')">6</button>
+        <button
+          style="background-color: #ff9f0a"
+          class="button-4"
+          onclick="numberFunction('-')"
+        >
+          <hr/ style="border: 2px solid white; width: 18px;">
+        </button>
+      </div>
+      <div class="row">
+        <button onclick="numberFunction('1')">1</button>
+        <button onclick="numberFunction('2')">2</button>
+        <button onclick="numberFunction('3')">3</button>
+        <button
+          style="background-color: #ff9f0a"
+          class="button-4"
+          onclick="numberFunction('+')"
+        >
+          +
+        </button>
+      </div>
+      <div class="row">
+        <button
+          style="width: 150px; border-radius: 50px"
+          onclick="numberFunction('0')"
+        >
+          0
+        </button>
+        <button onclick="numberFunction('.')">.</button>
+        <button
+          onclick="getResult()"
+          style="background-color: #ff9f0a; color: white"
+          class="button-4"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
